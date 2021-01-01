@@ -6,8 +6,11 @@ public class Program {
     public static void main(String[] args) {
         BankService bankService = new BankService();
 
-        int account = bankService.createNewAccount("savings", BigDecimal.valueOf(41600));
+        int mySaving = bankService.createNewAccount("savings", new
+                        BigDecimal(500.00));
+        
+        int myInvestment = bankService.createNewAccount("investment", new BigDecimal(1000.00));
 
-        System.out.print(account);
+        bankService.transferMoney(mySaving, myInvestment, new BigDecimal(300.00));
     }
 }
