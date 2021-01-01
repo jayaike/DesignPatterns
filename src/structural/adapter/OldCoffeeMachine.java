@@ -6,6 +6,6 @@ public class OldCoffeeMachine {
     }
 
     public void selectB() {
-        System.out.println("Selected A from Old Coffee Machine");
+        System.out.println("Selected B from Old Coffee Machine");
     }
 }
